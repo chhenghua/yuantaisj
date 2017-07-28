@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+ul li {
+    list-style: none;
+}
+.yuantai-wrapper {
+    width: 100%;
+    // width: 1200px;
+    min-width: 1200px;
+    background-color: #fff;
+}
+
+.yuantai-wrapper .yt-navbar-wrapper {
+    width: 1200px;
+    height: 112px;
+    margin: auto;
+    overflow: hidden;
+}
+.yuantai-wrapper .yt-logo {
+    width: 106px;
+    height: 43px;
+    margin: 35px 0 0 67px;
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+}
+.yuantai-wrapper .yt-navbar {
+    margin: 65px 0 0 193px;
+}
+.yuantai-wrapper .yt-navbar li {
+    margin-left: 80px;
+}
+.yuantai-wrapper .yt-navbar li a {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+.yuantai-wrapper .yt-navbar li a:hover {
+    color: #00a0e9;
+}
+
+.yuantai-wrapper .yt-carousel {
+    width: 100%;
+    min-width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+.yuantai-wrapper .yt-carousel img {
+    width: 100%;
+}
+
+.yuantai-wrapper .carousel .yt-carousel .carousel-indicators ol li .notActive{
+  background: white;
+  border-color: rgb(8, 4, 4);
+}
+
+.yuantai-wrapper .carousel .yt-carousel .carousel-indicators ol li .active{
+  background: rgb(8, 4, 4)
+}
+
+.yuantai-wrapper .yt-about-us {
+    width: 1000px;
+    height: 455.83px;
+    margin: 60px auto;
+    background-image: url('../images/about-us.png');
+    background-size: 100% 100%;
+}
+
+.yuantai-wrapper .yt-exhibition-wrapper {
+    width: 1200px;
+    margin: auto;
+}
+.yuantai-wrapper .yt-exhibition-wrapper ul {
+    margin-bottom: 55px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+.yuantai-wrapper .yt-exhibition-wrapper ul li {
+    width: 220px;
+    height: 50px;
+    border-left: 1px solid #fff;
+    color: #fff;
+    background-color: #252525;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.yuantai-wrapper .yt-exhibition-wrapper ul li.active
+, .yuantai-wrapper .yt-exhibition-wrapper ul li:hover {
+    background-color: #404040;
+    color: #00a0e9;
+}
+.yuantai-wrapper .yt-exhibition-wrapper ul li:first-child {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.yuantai-wrapper .yt-exhibition-wrapper ul li:last-child {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.yuantai-wrapper .yt-exhibition {
+    width: 1006px;
+    height: auto;
+    min-height: 563px;
+    margin: auto;
+}
+.yuantai-wrapper .yt-exhibition-row {
+    width: 1006px;
+    // height: 563px;
+    // margin-bottom: 30px;
+    overflow: hidden;
+}
+.yuantai-wrapper .yt-exhibition-row .col-1 {
+    width: 487px;
+    height: 100%;
+}
+.yuantai-wrapper .yt-exhibition-row .col-2 {
+    width: 282px;
+    height: 100%;
+    margin-left: 30px;
+}
+.yuantai-wrapper .yt-exhibition-row .col-3 {
+    width: 177px;
+    height: 100%;
+    margin-left: 30px;
+}
+.yuantai-wrapper .yt-exhibition-row img {
+    width: 100%;
+}
+/*.yuantai-wrapper .yt-exhibition-row img {*/
+    /*margin-bottom: 22px;*/
+/*}*/
+
+.yuantai-wrapper .yt-cooperation {
+    width: 100%;
+    margin-top: 70px;
+}
+.yuantai-wrapper .yt-cooperation .yt-cooperation-img {
+    width: 100%;
+    margin: auto;
+}
+
+.yuantai-wrapper .footer {
+    width: 100%;
+    height: 180px;
+    background-color: #252525;
+}
+.yuantai-wrapper .footer-inner {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.yuantai-wrapper .footer-inner .footer-inner-left {
+    margin-top: 30px;
+    margin-left: 150px;
+    color: #fefefe;
+}
+.yuantai-wrapper .footer-inner-left .phone
+, .yuantai-wrapper .footer-inner-left .email
+, .yuantai-wrapper .footer-inner-left .address {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.yuantai-wrapper .footer-inner-left .phone:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -63px;
+    width: 23px;
+    height: 19px;
+    background-image: url('../images/phone-icon.png');
+    background-size: 100% 100%;
+}
+.yuantai-wrapper .footer-inner-left .email:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -63px;
+    width: 23px;
+    height: 19px;
+    background-image: url('../images/email-icon.png');
+    background-size: 100% 100%;
+}
+.yuantai-wrapper .footer-inner-left .address:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -63px;
+    width: 22px;
+    height: 24px;
+    background-image: url('../images/address-icon.png');
+    background-size: 100% 100%;
+}
+.yuantai-wrapper .footer-inner .footer-inner-right {
+    margin-top: 30px;
+}
+.yuantai-wrapper .footer-inner-right img {
+    width: 120px;
+    height: 120px;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.transform{
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}

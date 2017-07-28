@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>源态设计</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+        <!-- <link rel="stylesheet" href="lib/semantic/semantic.min.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
+        <link rel="stylesheet" href="css/zzsc.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index.css">
+
+    </head>
+    <body>
+        <div id="yuantai" class="yuantai-wrapper transform">
+            <!-- 导航栏 -->
+            <nav class="yt-navbar-wrapper">
+                <div class="yt-logo fl"></div>
+                <ul class="yt-navbar fl">
+                    <li class="fl"><a class="transform" href="#yuantai">首页 | HOME</a></li>
+                    <li class="fl"><a class="transform" href="#exhibition">作品 | WORKS</a></li>
+                    <li class="fl"><a class="transform" href="#cooperation">产品与服务 | PRODUCTS AND SERVICES</a></li>
+                    <li class="fl"><a class="transform" href="#about-us">关于我们 | ABOUT US</a></li>
+                </ul>
+            </nav>
+            <!-- 轮播 -->
+            <div class="carousel slide yt-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="images/banner/banner1.jpg" data-holder-rendered="true">
+                    </div>
+                    <div class="item">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src="images/banner/banner2.jpg" data-holder-rendered="true">
+                    </div>
+                    <div class="item active">
+                        <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide [900x500]" src="images/banner/banner3.jpg" data-holder-rendered="true">
+                    </div>
+                </div>
+
+            </div>
+            <img src="images/shadow1.png" style="width: 100%; min-width: 1200px;">
+            <!-- 关于我们 -->
+            <div id="about-us" class="yt-about-us"></div>
+            <!-- 作品展示 -->
+            <div id="exhibition" class="yt-exhibition-wrapper">
+                <ul>
+                    <li class="fl transform active" data-class="H5">H5</li>
+                    <li class="fl transform" data-class="LOGO">LOGO</li>
+                    <li class="fl transform" data-class="UI">UI设计</li>
+                    <li class="fl transform" data-class="HANDDRAW">手绘插图</li>
+                    <li class="fl transform" data-class="OTHER">其他</li>
+                </ul>
+                <div class="yt-exhibition">
+                </div>
+            </div>
+            <!-- 合作企业 -->
+            <div id="cooperation" class="yt-cooperation">
+                <img class="yt-cooperation-img transform" src="images/cooperation.png">
+            </div>
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="footer-inner-left fl">
+                        <div class="phone">联系方式：15019465011</div>
+                        <div class="email">电子邮件：2461328938@qq.com</div>
+                        <div class="address">公司地址：深圳市南山区苏豪大厦 13E2</div>
+                    </div>
+                    <div class="footer-inner-right fr">
+                        <img src="images/qrcode.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="lib/jquery.magnific-popup.js"></script>
+    <!-- <script src="lib/semantic/semantic.min.js"></script> -->
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        if (/iP(hone|od|ad)/.test(navigator.platform)) {
+                $('*').css({
+                    "cursor": "pointer"
+                });
+            }
+            $('.preloader').delay(3500).fadeOut(600);
+            $(document).ready(function () {
+                $('.magnificPopup__Box').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    removalDelay: 300,
+                    callbacks: {
+                        beforeOpen: function () {
+                            this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure magnificPopup__Animus');
+                            this.st.mainClass = this.st.el.attr('data-effect');
+                        }
+                    },
+                    closeOnContentClick: true,
+                    midClick: true
+                })
+            });
+    </script>
+</html>
