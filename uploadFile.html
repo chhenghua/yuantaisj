@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传json文件</title>
+</head>
+<body>
+    <input type="file" id="uploadFile" onchange="uploadJsonFile()"/>
+</body>
+<script src="./lib/jquery.min.js"></script>
+<script type="text/javascript">
+    var fileReader = new FileReader()
+
+    function uploadJsonFile() {
+        var file = document.getElementById('uploadFile').files[0]
+        fileReader.readAsText(file)
+        fileReader.onload = function(oFREvent) {
+            // 刷新内容
+            console.log(oFREvent.target.result)
+        }
+    }
+
+    $(document).ready(function() {
+
+    })
+</script>
+</html>
